@@ -92,10 +92,10 @@ export const dishImages: Record<string, string> = {
   "bread_2": "/menu-images/dish-091.jpeg",
   "bread_4": "/menu-images/dish-092.jpeg",
   "bread_6": "/menu-images/dish-093.jpeg",
-  "sets_1": "/menu-images/Замени фото для СЕТ «ПЯТЫЙ ЭЛЕМЕНТ» (40 шт суши + пицца + 16 чикен).jpeg",
+  "sets_1": "/menu-images/set-pyatiy-element.jpeg",
   "sets_3": "/menu-images/mega-mix-real.jpg",
-  "sets_4": "/menu-images/WhatsApp Image 2026-04-30 at 5.09.37 PM.jpeg",
+  "sets_4": "/menu-images/sets-king-kong.jpeg",
   "sets_2": "/placeholder.svg",
-  "sets_5": "/menu-images/set-na-dvoih.jpg.jpeg",
+  "sets_5": "/menu-images/set-na-dvoih.jpeg",
   "sets_6": "/placeholder.svg",
 };
