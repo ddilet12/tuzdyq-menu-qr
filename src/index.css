@@ -1,1 +1,102 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 190 22% 22%;
+    --foreground: 40 25% 92%;
+
+    --card: 190 22% 18%;
+    --card-foreground: 40 25% 92%;
+
+    --popover: 190 22% 16%;
+    --popover-foreground: 40 25% 92%;
+
+    --primary: 40 25% 92%;
+    --primary-foreground: 190 22% 16%;
+
+    --secondary: 190 22% 28%;
+    --secondary-foreground: 40 25% 92%;
+
+    --muted: 190 18% 26%;
+    --muted-foreground: 40 15% 75%;
+
+    --accent: 40 25% 92%;
+    --accent-foreground: 190 22% 16%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 190 18% 30%;
+    --input: 190 18% 30%;
+    --ring: 40 25% 92%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 190 22% 18%;
+    --sidebar-foreground: 40 25% 92%;
+    --sidebar-primary: 40 25% 92%;
+    --sidebar-primary-foreground: 190 22% 16%;
+    --sidebar-accent: 190 22% 24%;
+    --sidebar-accent-foreground: 40 25% 92%;
+    --sidebar-border: 190 18% 30%;
+    --sidebar-ring: 40 25% 92%;
+  }
+
+  .dark {
+    --background: 190 22% 22%;
+    --foreground: 40 25% 92%;
+    --card: 190 22% 18%;
+    --card-foreground: 40 25% 92%;
+    --popover: 190 22% 16%;
+    --popover-foreground: 40 25% 92%;
+    --primary: 40 25% 92%;
+    --primary-foreground: 190 22% 16%;
+    --secondary: 190 22% 28%;
+    --secondary-foreground: 40 25% 92%;
+    --muted: 190 18% 26%;
+    --muted-foreground: 40 15% 75%;
+    --accent: 40 25% 92%;
+    --accent-foreground: 190 22% 16%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 190 18% 30%;
+    --input: 190 18% 30%;
+    --ring: 40 25% 92%;
+    --sidebar-background: 190 22% 18%;
+    --sidebar-foreground: 40 25% 92%;
+    --sidebar-primary: 40 25% 92%;
+    --sidebar-primary-foreground: 190 22% 16%;
+    --sidebar-accent: 190 22% 24%;
+    --sidebar-accent-foreground: 40 25% 92%;
+    --sidebar-border: 190 18% 30%;
+    --sidebar-ring: 40 25% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Hide scrollbar for category tabs */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
